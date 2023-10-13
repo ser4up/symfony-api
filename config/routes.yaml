@@ -1,0 +1,19 @@
+controllers:
+    resource:
+        path: ../src/Controller/Web/
+        namespace: App\Controller\Web
+    type: attribute
+
+api_controllers:
+    resource:
+        path: ../src/Controller/Api/
+        namespace: App\Controller\Api
+    type: attribute
+    prefix: /api/v1
+    name_prefix: api.v1.
+
+api_signin_check:
+    path: /api/v1/auth/signin
+
+gesdinet_jwt_refresh_token:
+    path: /api/v1/auth/refresh
