@@ -34,7 +34,8 @@ security:
         - { path: ^/api/v1/signup, roles: PUBLIC_ACCESS }
         - { path: ^/api/v1/signin, roles: PUBLIC_ACCESS }
         - { path: ^/api/v1/doc, roles: PUBLIC_ACCESS }
-        - { path: ^/api,       roles: ROLE_USER }
+        - { path: ^/api/v1/posts, methods: [GET], roles: PUBLIC_ACCESS }
+        - { path: ^/api, roles: ROLE_USER }
 
 when@test:
     security:
