@@ -21,6 +21,8 @@
 
 To check the code run this
 
+(Coding Standards Fixer / PHPStan)
+
 ```
 sh code-check.sh
 ```

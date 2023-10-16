@@ -42,7 +42,6 @@ class PostController extends AbstractController
             new OA\Property(property: 'message', type: 'string', example: 'string'),
         ])
     )]
-    #[Security(name: 'Bearer')]
     #[Route('/posts', name: 'posts.list', methods: ['GET'])]
     public function list(PostRepository $postRepo): Response
     {
@@ -80,7 +79,6 @@ class PostController extends AbstractController
             new OA\Property(property: 'message', type: 'string', example: 'string'),
         ])
     )]
-    #[Security(name: 'Bearer')]
     #[Route('/posts/{id}', name: 'posts.one', methods: ['GET'])]
     public function one(int $id, PostRepository $postRepo): Response
     {
